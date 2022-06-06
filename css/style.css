@@ -118,6 +118,10 @@ body.light .dark-theme {
   stroke: #646464;
 }
 
+body.light .benefits__line::after{
+  background: #DAD5E9;
+}
+
 ::-moz-selection {
   background-color: #6E6390;
   color: #fff;
@@ -1180,7 +1184,7 @@ input:checked + .slider-round:before {
     display: grid;
     -ms-grid-columns: 5fr 1fr 4fr;
     grid-template-columns: 5fr 1fr 4fr;
-    -ms-grid-rows: (150px)[10];
+    -ms-grid-rows: (150px);
     grid-template-rows: repeat(10, 150px);
     grid-gap: 15px;
   }
