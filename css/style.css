@@ -18,6 +18,10 @@ body {
   transition: all 0.3s;
 }
 
+
+/* ========================= */
+/* ========light theme================== */
+
 body.light {
   font-family: "Mulish", sans-serif;
   letter-spacing: 0.03em;
@@ -38,35 +42,17 @@ body.light .light-svg {
   fill: #313131;
 }
 
-body.light .price__block:hover {
-  background: #7F5AF0;
-  color: #fff;
-}
 
-body.light .price__block:hover .tariff {
-  color: #fff;
-}
-
-body.light .price__block:hover .tariff span {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #fff;
-}
-
-body.light .price__block:hover .price__benefits-items {
-  color: #fff;
-}
-
-body.light .price__block:hover .check-light {
-  stroke: #fff;
-}
 
 body.light .price__block,
 body.light .product__block {
   transition: all 0.3s;
   background: #F8F5FF;
   color: #313131;
+}
+body.light .price__block-selected {
+  background: #7F5AF0;
+  color: #fff;
 }
 
 body.light .portfolio {
@@ -98,9 +84,20 @@ body.light .tariff span {
   color: #313131;
 }
 
+body.light .tariff-selected,
+body.light .tariff-selected span{
+  color: #fff;
+}
+
+
 body.light .price__benefits-items {
   color: #313131;
 }
+
+body.light .item-selected {
+  color: #fff;
+}
+
 
 body.light .check-light {
   stroke: #7F5AF0;
@@ -118,19 +115,18 @@ body.light .dark-theme {
   stroke: #646464;
 }
 
+body.light .selected {
+  stroke: #fff;
+}
+
 body.light .benefits__line::after{
   background: #DAD5E9;
 }
 
-::-moz-selection {
-  background-color: #6E6390;
-  color: #fff;
-}
+/* ========================= */
+/* ========light theme end================== */
 
-::selection {
-  background-color: #6E6390;
-  color: #fff;
-}
+
 
 img {
   max-width: 100%;
@@ -500,20 +496,13 @@ img {
   margin: 0 auto;
 }
 
-.price__block:hover {
+.price__block-selected {
   background: #7F5AF0;
 }
 
-.price__block:hover .price__link {
+ .price__link:hover{
+  color: #7F5AF0;
   background: #fff;
-}
-
-.price__block:hover .price__tariff {
-  color: #fff;
-}
-
-.price__block:hover .benefits__line::after {
-  background: #D1D1D1;
 }
 
 .price__inner {
@@ -557,6 +546,10 @@ img {
   color: #7F5AF0;
 }
 
+.price__tariff-selected{
+  color:#fff;
+}
+
 .price__block-info {
   margin-bottom: 25px;
 }
@@ -596,7 +589,15 @@ img {
   border-radius: 100px;
   color: #7F5AF0;
   border: 1px solid #7F5AF0;
+  transition: all 0.3s;
 }
+
+.price__link-selected{
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
 
 .price__link span {
   display: none;
@@ -772,6 +773,7 @@ img {
 /* slider */
 
 .slider-round {
+  position: relative;
   border: 1px solid #7F5AF0;
   position: absolute;
   cursor: pointer;
@@ -801,10 +803,16 @@ input:checked + .slider-round:before {
 }
 
 .light-theme {
+  position: absolute;
+  top: -20%;
+  left: 52px;
   stroke: #646464;
 }
 
 .dark-theme {
+  position: absolute;
+  top: -15%;
+  left: -35px;
   stroke: #7F5AF0;
 }
 
