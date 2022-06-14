@@ -142,6 +142,11 @@ body.light .mobile-nav-button__icon::before {
   transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
 }
 
+body.light #phone,
+body.light #name {
+  color: #313131;
+}
+
 
 
 
@@ -712,6 +717,7 @@ img {
 .form__decoration{
   display: none;
 }
+
 
 .footer {
   background: #1C1C1C;
