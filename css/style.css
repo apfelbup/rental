@@ -522,6 +522,7 @@ img {
 }
 
 .check-light {
+  margin-right: 150px;
   stroke: #fff;
 }
 
@@ -537,10 +538,6 @@ img {
   background: #7F5AF0;
 }
 
- .price__link:hover{
-  color: #7F5AF0;
-  background: #fff;
-}
 
 .price__inner {
   padding: 30px 28px;
@@ -567,6 +564,7 @@ img {
 
 .price__costs {
   margin-bottom: 110px;
+  padding-left: 20px;
 }
 
 .price__text {
@@ -612,6 +610,11 @@ img {
   align-items: center;
 }
 
+.price__benefits-item span,
+.price__dis-item span {
+  margin-left: 10px;
+}
+
 .price__benefits-item svg {
   margin-right: 5px;
 }
@@ -630,7 +633,8 @@ img {
 }
 
 .price__link-selected{
-  color: #fff;
+  color: #7F5AF0;
+  background: #fff;
   border: 1px solid #fff;
 }
 
@@ -996,6 +1000,8 @@ input:checked + .slider-round:before {
 
   .price__costs {
     margin-bottom: 40px;
+    padding-left: 0;
+    
   }
 
   .price__text {
@@ -1294,9 +1300,9 @@ input:checked + .slider-round:before {
 
 @media (min-width: 991px) {
   .container {
-    max-width: 1140px;
+    max-width: 1160px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 15px;
   }
   .menu {
     display: flex;
@@ -1414,6 +1420,10 @@ input:checked + .slider-round:before {
     font-size: 60px;
     line-height: 75px;
     margin-bottom: 30px;
+  }
+  body.light .rocket-light{
+    stroke: #DB5AF0;
+    fill: #DB5AF0;
   }
 
   .header__link {
@@ -1547,6 +1557,11 @@ line-height: 22px;
 
   .tariff {
     margin-bottom: 40px;
+  }
+
+  .tariff-selected,
+  .price__tariff-selected {
+    margin-bottom: 16px;
   }
 
   .price__content {
