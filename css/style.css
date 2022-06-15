@@ -1559,11 +1559,6 @@ line-height: 22px;
     margin-bottom: 40px;
   }
 
-  .tariff-selected,
-  .price__tariff-selected {
-    margin-bottom: 16px;
-  }
-
   .price__content {
     min-width: 0px;
     display: flex;
