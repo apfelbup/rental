@@ -1168,8 +1168,8 @@ input:checked + .slider-round:before {
 
 
   .label__text {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
 
@@ -1265,10 +1265,14 @@ text-transform: none;
     padding-left: 15px;
   }
 
-  .portfolio__link {
-    text-transform: none;
-    margin-right: 15px;
-    }
+    .portfolio__link {
+      font-size: 18px;
+  line-height: 22px;
+      padding:18px 38px;
+      text-transform: none;
+      margin-right: 15px;
+  
+  }
 
   .price,
   .portfolio,
@@ -1716,12 +1720,7 @@ margin-right: 0;
     margin-bottom: 60px;
 }
 
-  .portfolio__link {
-    font-size: 18px;
-line-height: 22px;
-    padding:18px 38px;
 
-}
 
 
 
