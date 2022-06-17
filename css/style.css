@@ -361,7 +361,7 @@ line-height: 18px;
   position: relative;
   min-width: 115px;
   min-height: 115px;
-  border: 1px solid rgba(127, 90, 240, 0.2);
+  border: 2px solid rgba(127, 90, 240, 0.2);
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -654,6 +654,10 @@ line-height: 18px;
   transition: all 0.3s;
 }
 
+.price__link:hover {
+  background: #fff;
+}
+
 .price__link-selected{
   color: #7F5AF0;
   background: #fff;
@@ -733,6 +737,7 @@ line-height: 18px;
   margin-bottom: 10px;
   text-align: center;
 }
+
 
 .form__icon {
   position: relative;
@@ -896,6 +901,10 @@ input:checked + .slider-round:before {
   stroke: #7F5AF0;
 }
 
+.slick-slide {
+  margin: 0 15px;
+}
+
 @media (min-width: 386px) {
   .menu .button__menu {
     display: flex;
@@ -911,6 +920,30 @@ input:checked + .slider-round:before {
   .header__pros-item + .header__pros-item {
     margin-left: 5px;
   }
+}
+
+@media (max-width: 319px) {
+  .submit__link {
+    padding: 14px 30px;
+}
+
+.portfolio__link {
+  padding: 13px 30px;
+}
+
+.price__link {
+  padding: 14px 30px;
+}
+
+.header__pros-item + .header__pros-item {
+  margin-top: 10px;
+  
+}
+
+.form-block .form__info {
+  padding: 12px 35px;
+  font-size: 14px;
+}
 }
 
 @media (min-width: 480px) {
@@ -994,13 +1027,14 @@ input:checked + .slider-round:before {
 
   .price__block-info {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
   .price__info-benefits p {
     display: none;
   }
 
+  .price__dis-items,
   .price__benefits-items {
     font-size: 20px;
     line-height: 25px;
@@ -1074,6 +1108,36 @@ input:checked + .slider-round:before {
     color: #AAAAAA;
   }
 
+  
+
+  .callback__about {
+    margin-bottom: 40px;
+  }
+
+  .form-block {
+    max-width: 740px;
+    margin: 0px auto 30px auto;
+  }
+
+  .form-block .form__info {
+    padding: 22px 124px;
+  }
+
+  .form__submit {
+    margin: 0 auto;
+    padding: 28px 71px;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 60px;
+  }
+
+
+  .label__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+
 }
 
 @media (min-width: 768px) {
@@ -1139,14 +1203,35 @@ input:checked + .slider-round:before {
     line-height: 23px;
   }
 
+  .tariff__link {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+  }
+
   
 
   .portfolio {
     padding: 160px 0;
   }
 
+  .portfolio__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subtitle__portfolio,
+  .title__portfolio{
+    text-align: left;
+    padding-left: 15px;
+  }
+
   .portfolio__link {
     text-transform: none;
+    margin-right: 15px;
     }
 
   .price,
@@ -1188,28 +1273,9 @@ input:checked + .slider-round:before {
     line-height: 23px;
     text-align: center;
     margin-bottom: 60px;
+    max-width: 720px;
   }
 
-  .callback__about {
-    margin-bottom: 40px;
-  }
-
-  .form-block {
-    max-width: 740px;
-    margin: 0px auto 30px auto;
-  }
-
-  .form-block .form__info {
-    padding: 22px 124px;
-  }
-
-  .form__submit {
-    margin: 0 auto;
-    padding: 28px 71px;
-    font-size: 18px;
-    line-height: 23px;
-    margin-bottom: 60px;
-  }
 
   .form__decoration{
     display: flex;
@@ -1217,12 +1283,6 @@ input:checked + .slider-round:before {
     top: 0;
     left: 75%;
   }
-
-  .label__text {
-    font-size: 18px;
-    line-height: 23px;
-  }
-
   .price__content {
     min-width: 650px;
     display: flex;
@@ -1421,6 +1481,14 @@ input:checked + .slider-round:before {
     margin: 0px auto 40px auto;
 }
 
+.portfolio__link{
+margin-right: 0;
+}
+.subtitle__portfolio,
+.title__portfolio{
+  padding-left: 0px;
+}
+
 
   .portfolio__gallery {
     display: -ms-grid;
@@ -1492,11 +1560,8 @@ input:checked + .slider-round:before {
 
 @media (min-width: 1034px) {
 
-  .header__top {
-    padding-bottom: 130px;
-  }
 
-  .view__field{
+  .header__main{
     height: 100vh;
   }
 
@@ -1591,7 +1656,7 @@ input:checked + .slider-round:before {
   }
 
   .support__block {
-    max-width: 580px;
+    max-width: 565px;
   }
 
   .support__text {
@@ -1602,6 +1667,10 @@ input:checked + .slider-round:before {
     text-align: left;
   }
 
+  .portfolio__about {
+    margin-bottom: 60px;
+}
+
   .portfolio__link {
     font-size: 18px;
 line-height: 22px;
@@ -1609,11 +1678,7 @@ line-height: 22px;
 
 }
 
-  .portfolio__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
 
   .portfolio__all {
     display: inline-block;
@@ -1701,7 +1766,7 @@ line-height: 22px;
   .price__benefits-items {
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
 
   .price__benefits-item + .price__benefits-item {
@@ -1715,6 +1780,10 @@ line-height: 22px;
     height: 1px;
     background: #1C1C1C;
     margin: 40px 0;
+  }
+
+  .block-info__selected{
+    margin-bottom: 47px;
   }
 
   .price__link {
