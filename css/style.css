@@ -1070,7 +1070,7 @@ input:checked + .slider-round:before {
 
 @media(min-width: 520px){
   .header__rocket {
-    max-width: 542px;
+    max-width: 350px;
   }
   .form__submit {
     margin: 0 auto;
@@ -1189,6 +1189,10 @@ input:checked + .slider-round:before {
 .header__main .costs__link{
   margin-bottom: 60px;
     font-size: 16px;
+  }
+
+  .header__rocket {
+    max-width: 542px;
   }
 
   .costs__link p span {
