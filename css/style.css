@@ -59,6 +59,13 @@ body.light .price__block-selected {
   color: #fff;
 }
 
+body.light .product__text,
+body.light .text {
+  color: #918BA6;
+}
+
+
+
 body.light .portfolio {
   background: #D5C7FF;
 }
@@ -88,10 +95,20 @@ body.light .tariff span {
   color: #313131;
 }
 
+body.light .price__benefits-item{
+  color: #313131;
+}
+
+body.light .benefits-item__selected {
+  color: #FFFFFF;
+}
+
+
 body.light .tariff-selected,
 body.light .tariff-selected span{
   color: #fff;
 }
+
 
 
 body.light .price__benefits-items {
@@ -107,6 +124,9 @@ body.light .check-light {
   stroke: #7F5AF0;
 }
 
+
+
+
 body.light .footer__options p {
   color: #fff;
 }
@@ -115,16 +135,19 @@ body.light .light-theme {
   stroke: #7F5AF0;
 }
 
-body.light .dark-theme {
-  stroke: #646464;
-}
-
-body.light .selected {
-  stroke: #fff;
-}
 
 body.light .price__dis-items {
   color: #A7A1B8;
+}
+
+body.light .price__link-selected {
+  color: #FFFFFF;
+  background: transparent;
+}
+
+body.light .price__link-selected:hover{
+  color: #7F5AF0;
+  background: #fff;
 }
 
 body.light .dis__svg {
@@ -156,10 +179,16 @@ body.light .mobile-nav-button__icon::before {
 
 body.light #phone,
 body.light #name {
-  color: #313131;
+  color: #7F5AF0;
 }
 
+body.light .form__info{
+  border: 1px solid #CDC7E1;
+}
 
+body.light .form__info::placeholder {
+  color: #CDC7E1;
+}
 
 
 /* ========================= */
@@ -209,6 +238,7 @@ img {
 .menu__item-link:hover {
   color: #7F5AF0;
 }
+
 
 .menu__link {
   font-family: "Montserrat";
@@ -337,14 +367,14 @@ img {
 
 .submit__link {
   font-weight: 500;
-font-size: 14px;
-line-height: 18px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #fff;
   background: #7F5AF0;
   border-radius: 100px;
   border: 1px solid #7F5AF0;
-  padding: 14px 61px;
+  padding: 13px 63px;
   margin-bottom: 25px;
   transition: all 0.3s;
 }
@@ -560,9 +590,13 @@ line-height: 18px;
 
 .check-light {
   margin-right: 150px;
-  stroke: #fff;
+  stroke: #7F5AF0;
 }
 
+  .selected{
+    margin-right: 150px;
+    stroke: #FFFFFF;
+  }
 
 .price__block {
 
@@ -593,7 +627,7 @@ line-height: 18px;
 
 .tariff span {
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .tariff__link {
@@ -659,6 +693,11 @@ line-height: 18px;
 .price__benefits-item {
   display: flex;
   align-items: center;
+  color: #fff;
+}
+
+.benefits-item__selected {
+  color: #fff;
 }
 
 .price__benefits-item span,
@@ -696,11 +735,12 @@ line-height: 18px;
 }
 
 .price__link:hover {
-  background: #fff;
+  background: #7F5AF0;
+  color: #fff;
 }
 
 .price__link-selected{
-  color: #7F5AF0;
+  color: #463774;
   background: #fff;
   border: 1px solid #fff;
 }
@@ -732,13 +772,13 @@ line-height: 18px;
   display: block;
   text-align: center;
   background: transparent;
-  padding: 12px 55px;
+  padding: 12px 0px;
   border: 1px solid #655D7E;
   border-radius: 100px;
   font-family: "Mulish";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 13px;
+  line-height: 16px;
   color: #fff;
 }
 
@@ -763,12 +803,17 @@ line-height: 18px;
 .form__submit {
   cursor: pointer;
   padding: 12px 55px;
-  border: 1px solid #655D7E;
+  border: 1px solid #7F5AF0;
   border-radius: 1000px;
   background: #7F5AF0;
   color: #fff;
   transition: all 0.3s;
 }
+
+.form__info::placeholder {
+  color: #655D7E;
+}
+
 
 .label__text {
   font-family: "Mulish";
@@ -795,6 +840,10 @@ line-height: 18px;
   background: #1C1C1C;
   padding: 50px 0;
   text-align: center;
+}
+
+.logo__link-img {
+  max-width: 50%;
 }
 
 .footer__options {
@@ -931,14 +980,14 @@ input:checked + .slider-round:before {
 .light-theme {
   position: absolute;
   top: -20%;
-  left: 52px;
+  left: 58px;
   stroke: #646464;
 }
 
 .dark-theme {
   position: absolute;
   top: -15%;
-  left: -35px;
+  left: -40px;
   stroke: #7F5AF0;
 }
 
@@ -975,8 +1024,9 @@ input:checked + .slider-round:before {
 
 .form-block .form__info {
   padding: 12px 35px;
-  font-size: 14px;
+  font-size: 11px;
 }
+
 }
 
 
@@ -1180,8 +1230,11 @@ input:checked + .slider-round:before {
     margin: 0px auto 30px auto;
   }
 
+
   .form-block .form__info {
-    padding: 22px 124px;
+    padding: 22px 0px;
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .form__submit {
@@ -1232,6 +1285,12 @@ input:checked + .slider-round:before {
   }
 
 
+  .logo__link-img {
+    max-width: 100%;
+  }
+  
+
+
 
   .header__main .header__title {
     font-weight: 800;
@@ -1268,7 +1327,7 @@ input:checked + .slider-round:before {
   }
 
   .submit__link {
-    padding: 28px 70px;
+    padding: 27px 70px;
     margin-bottom: 88px;
     font-size: 18px;
     line-height: 23px;
@@ -1283,6 +1342,15 @@ line-height: 22px;
 text-transform: none;
   }
 
+  .tariff{
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .tariff span {
+    font-size: 20px;
+    line-height: 25px;
+  }
   
 
   .portfolio {
@@ -1381,6 +1449,14 @@ text-transform: none;
     margin-right: 120px;
   }
 
+  .price__benefits-item{
+    color: #D1D1D1;
+  }
+
+  .benefits-item__selected{
+    color: #fff;
+  }
+
   .price__info-dis {
     display: flex;
   }
@@ -1434,6 +1510,7 @@ text-transform: none;
   }
 
   .optios__publick {
+    font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 50px;
@@ -1754,6 +1831,8 @@ margin-right: 0;
 
   .portfolio__about {
     margin-bottom: 60px;
+
+    
 }
 
 
@@ -1816,6 +1895,12 @@ margin-right: 0;
     margin-bottom: 52px;
   }
 
+  body.light .selected,
+  .selected {
+    stroke: #5028CA;
+  }
+  
+
   .price__text {
     font-size: 16px;
     line-height: 20px;
@@ -1848,7 +1933,9 @@ margin-right: 0;
     line-height: 25px;
     margin-bottom: 28px;
   }
-
+  .benefits-item__selected{
+    color: #D1D1D1;
+  }
   .price__benefits-item + .price__benefits-item {
     margin-top: 10px;
   }
